@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0173)https://devv-is-coding.github.io/HappyValentines2/?fbclid=IwY2xjawIbXBZleHRuA2FlbQIxMAABHRUlEnJYm_kmIWHhKHgo-ZwVSHGs9wKRdldBFCrblen4vliuJ3HUE6glFw_aem_ZSqPArizM30BbhNih80aqA -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY VALENTINE'S DAY</title>
+    <link rel="stylesheet" href="./HAPPY VALENTINE&#39;S DAY_files/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Column 1 -->
+        <div class="column1">
+            <div class="container">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="text">
+                                <strong>Happy Valentines Day Beb!,</strong>
+                                <p> 
+                                    Thank your for staying by my side through ups and downs.thank you for everything, for your love and patience, Happy Valentines Day and I love you❤️ 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column2">
+            <div class="separator-box">
+                <div class="audio-container" id="yt-container">
+                    <iframe id="yt-player" width="0" height="0" frameborder="0" allow="autoplay" src="./HAPPY VALENTINE&#39;S DAY_files/saved_resource.html"></iframe>
+                </div>
+                <h2>I press ang no</h2>
+                <img src="./HAPPY VALENTINE&#39;S DAY_files/cat-cute.gif" alt="GIF">
+                <button class="playAudio" id="playAudio" onclick="playAudio()">Play Audio</button>
+                
+                <button class="yesBTN" id="yesBTN" onclick="yesButton()">Yes</button>
+                <button class="noBTN" id="noBTN">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Envelope opening animation
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+        // YouTube Audio Control
+        let player = document.getElementById("yt-player");
+
+        playAudio = () => {
+    player.src = "https://www.youtube.com/embed/QrA-FttmpUo?autoplay=1";
+}
+
+        yesButton = () => {
+            alert("Yey!!! Love you!");
+            window.location.reload();
+        }
+        const moveRandomEl = (e) => {
+            e.style.position = "absolute";
+            e.style.top = Math.floor(Math.random() * 90 + 5) + "%";
+            e.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+        }
+        const moveRandomBTN = document.getElementById("noBTN").addEventListener("mouseenter", (e) => {
+            moveRandomEl(e.target);
+        });
+    </script>
+
+
+</body>
+</html>
